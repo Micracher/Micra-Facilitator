@@ -1,4 +1,4 @@
-📄 MICRA FACILITATOR PUBLIC & COMMERCIAL LICENSE:
+📄 **MICRA FACILITATOR PUBLIC & COMMERCIAL LICENSE:**
 
 1. Bireysel, Eğitim ve Hobi Kullanımı (Öğrenciler ve Bağımsız Geliştiriciler İçin):
 
@@ -15,10 +15,10 @@ Emeğin gizlenmesi veya "o geliştirmedi" denmesi kesinlikle yasaktır. Mülkiye
 
 2. Kurumsal, Çoklu ve Ticari Kullanım (Şirketler ve Stüdyolar İçin):
 
-Çoklu Geliştirici ve Kurumlar: Birden fazla kişiden oluşan ekiplerin, şirketlerin, oyun stüdyolarının veya organizasyonların MicraP'i kullanması, projeyi forklayıp
+Çoklu Geliştirici ve Kurumlar: Birden fazla kişiden oluşan ekiplerin, şirketlerin, oyun stüdyolarının veya organizasyonların Micra Facilitator'u kullanması, projeyi forklayıp
 (fork) kendi bünyelerinde dağıtması kurucu (Micraçer) tarafından verilecek resmi yazılı izne tabidir.
 
-Ticari Kullanım: MicraP kullanılarak yapılan ve üzerinden gelir elde edilmesi (satış, reklam, içi satın alma vb.) hedeflenen tüm ticari projeler, oyunlar ve uygula-
+Ticari Kullanım: Micra Facilitator kullanılarak yapılan ve üzerinden gelir elde edilmesi (satış, reklam, içi satın alma vb.) hedeflenen tüm ticari projeler, oyunlar ve uygula-
 malar için yazılı izin alınması zorunludur.
 
 ---
@@ -33,7 +33,24 @@ lali sayılır. Lisans kayıtları gizlilik esasıyla sadece kurucuda saklanır.
 
 ---
 
+4. Lisans İhlali ve Yaptırımlar
+
+Bu lisansın 2. maddesinde (Kurumsal, Çoklu ve Ticari Kullanım) belirtilen şartlara uymadan, Micraçer'den (Miraç) yazılı izin almadan, kriptografik doğrulama anahtarı (License Key) bulunmadan MicraP yazılımını kullanan, forklayan (fork), dağıtan veya ticari gelir elde eden tüm şirketler, stüdyolar, ekipler ve tüzel kişiler Lisans İhlalcisi olarak kabul edilir.
+
+İhlal Tespit Edildiğinde Uygulanacak Süreç:
+
+* Aşama 1 - Bildirim: İhlalciye, lisans sahibi tarafından e-posta veya Discord üzerinden resmi bildirim yapılır ve ihlale 15 (onbeş) gün içinde son vermesi, izin alması veya projeyi yayından kaldırması ihtar edilir.
+
+* Aşama 2 - Cezai Şart (Yaptırım): Süre sonunda ihlal devam ederse, ihlalci, lisans sahibine, emsal ticari lisans ücretinin 4 (dört) katı oranında cezai tazminat ödemeyi peşinen kabul etmiş sayılır.
+
+* Aşama 3 - Dava Hakkı: Lisans sahibi, ihlalcinin tüm gelirlerine el koyma, projeyi durdurma ve ihlalci aleyhine hukuki ve cezai tüm yollara başvurma hakkına sahiptir.
+
+Lisans ihlali nedeniyle açılacak tüm davalarda, lisans sahibinin avukatlık ücretleri, mahkeme masrafları ve bilirkişi giderleri, ihlalci tarafından karşılanır. Bu lisans sözleşmesi, Türkiye Cumhuriyeti yasalarına göre yorumlanır. Doğacak uyuşmazlıklarda Türk Mahkemeleri (münhasıran İstanbul Çağlayan Adliyesi) yetkilidir.
+
+---
+
 Kurumsal/Ticari İzin Başvuruları ve Kriptografik Doğrulama Talepleri İçin:
+
 Discord: micracer_51620
 E-Posta: isletmekanal40@gmail.com
 
