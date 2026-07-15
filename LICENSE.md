@@ -1,5 +1,9 @@
 📄 **MICRA FACILITATOR PUBLIC & COMMERCIAL LICENSE:**
 
+LİSANSA KABUL VE ONAY:
+
+Bu yazılımı (Micra Facilitator / MicraP) indiren, kopyalayan, çalıştıran, dağıtan veya herhangi bir şekilde kullanan her gerçek veya tüzel kişi, bu lisans sözleşmesinin tüm maddelerini okuduğunu, anladığını ve bu maddelerle bağlı olmayı peşinen ve geri alınamaz şekilde kabul ettiğini beyan eder. Bu lisansı kabul etmeyen kişiler, yazılımı kullanma, kopyalama veya dağıtma hakkına sahip değildir ve yazılımı derhal imha etmekle yükümlüdür.
+
 1. Bireysel, Eğitim ve Hobi Kullanımı (Öğrenciler ve Bağımsız Geliştiriciler İçin):
 
 Öğrenciler ve Hobi Geliştiricileri: MicraP oyun dilini ve motorunu eğitim, kendini geliştirme, hobi projeleri ve ticari olmayan bireysel oyunlar için kullanmak, kodu
