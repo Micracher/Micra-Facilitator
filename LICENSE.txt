@@ -1,0 +1,43 @@
+📄 MICRA FACILITATOR PUBLIC & COMMERCIAL LICENSE:
+
+1. Bireysel, Eğitim ve Hobi Kullanımı (Öğrenciler ve Bağımsız Geliştiriciler İçin):
+
+Öğrenciler ve Hobi Geliştiricileri: MicraP oyun dilini ve motorunu eğitim, kendini geliştirme, hobi projeleri ve ticari olmayan bireysel oyunlar için kullanmak, kodu
+kendi bilgisayarınızda çalıştırmak tamamen serbesttir ve ücretsizdir. Herhangi bir izin almanıza gerek yoktur.
+
+Katkıda Bulunma (Contribution): Projeye GitHub üzerinden kod katkısı yapan geliştiricilerin (işçilerin) yazdığı kodların mülkiyeti projenin bütünlüğü için Micraçer’e
+devredilmiş sayılır.
+
+Atıf ve İtibar Hakkı (Saygı Maddesi): Projeye katkı sağlayan herkes, yaptığı geliştirmeleri kendi portfolyosunda, CV'sinde veya LinkedIn'de referans gösterebilir.
+Emeğin gizlenmesi veya "o geliştirmedi" denmesi kesinlikle yasaktır. Mülkiyet projenindir, gurur geliştiricinindir.
+
+---
+
+2. Kurumsal, Çoklu ve Ticari Kullanım (Şirketler ve Stüdyolar İçin):
+
+Çoklu Geliştirici ve Kurumlar: Birden fazla kişiden oluşan ekiplerin, şirketlerin, oyun stüdyolarının veya organizasyonların MicraP'i kullanması, projeyi forklayıp
+(fork) kendi bünyelerinde dağıtması kurucu (Micraçer) tarafından verilecek resmi yazılı izne tabidir.
+
+Ticari Kullanım: MicraP kullanılarak yapılan ve üzerinden gelir elde edilmesi (satış, reklam, içi satın alma vb.) hedeflenen tüm ticari projeler, oyunlar ve uygula-
+malar için yazılı izin alınması zorunludur.
+
+---
+
+3. Kriptografik Doğrulama ve Güvenlik (Kopyalanamaz İzin Sistemi):
+
+Bu lisans kapsamındaki tüm kurumsal ve ticari izinler, kurucu tarafından her şirkete/ekibe özel olarak üretilen benzersiz bir Kriptografik Dijital İmza (Şifreli
+Anahtar) ile doğrulanır.
+
+Bu yazılı izin anahtarları kopyalanamaz, çoğaltılamaz veya üçüncü şahıslara devredilemez. Geçerli bir kriptografik doğrulaması olmayan kurumsal projeler lisans ih-
+lali sayılır. Lisans kayıtları gizlilik esasıyla sadece kurucuda saklanır.
+
+---
+
+Kurumsal/Ticari İzin Başvuruları ve Kriptografik Doğrulama Talepleri İçin:
+Discord: micracer_51620
+E-Posta: isletmekanal40@gmail.com
+
+---
+
+Yürürlük Tarihi: 15 Temmuz 2026
+Telif Hakkı © 2026 - Micraçer / Miraç
