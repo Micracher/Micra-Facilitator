@@ -6,3 +6,10 @@ Slogan:
 > **SDL2'yi kullan, Micra ile hızlan!**
 >
 > Eser sahibi: ***Micraçer***
+---
+# TEŞEKKÜRLER!
+
+Bu kütüphane, SDL2 (zlib lisanslı) üzerine inşa edilmiştir.  
+Sam Lantinga'ya ve SDL2 ekibine, bu harika aracı bizimle paylaştıkları için teşekkürler.  
+
+*(Mizah) Yoksa SDL2 olmasaydı, tekrar yapmakla uğraşırdım!* **=)**
