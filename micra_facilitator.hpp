@@ -5,12 +5,11 @@
  */
 
 #pragma once
-
-#ifndef MICRA_FACILITATOR
-#define MICRA_FACILITATOR
-
 #include <SDL2/SDL.h>
 #include <iostream>
+
+#define LOOP while(true)
+#define DELAY SDL_Delay
 
 typedef struct Key {
     bool n0, n1, n2, n3, n4, n5, n6, n7, n8, n9;
@@ -23,6 +22,15 @@ typedef struct Key {
     bool capslock, numlock, lctrl, rctrl, lshift, rshift, lalt, ralt;
     bool quit;
 } Key;
+
+typedef struct Mouse {
+    SDL_Event event;
+    int x, y;
+    int dx, dy;
+    bool left_button, right_button, middle_button;
+    bool left_click, right_click;
+    int wheel_y;
+} Mouse;
 
 typedef struct Screen {
     SDL_Window* window;
@@ -51,10 +59,12 @@ inline void quit_sdl2(Screen screen) {
 inline bool quit_press() {
     SDL_Event e;
     if (SDL_PollEvent(&e) && e.type == SDL_QUIT) {
-        return false;
+        return true;
     }
-    return true;
+    return false;
 }
+
+inline void delay(Uint32 ms) { SDL_Delay(ms); }
 
 inline bool create_window(Screen& screen, const char* title, int x, int y, int w, int h, Uint32 flags) {
     SDL_Window* win = SDL_CreateWindow(title, x, y, w, h, flags);
@@ -163,6 +173,45 @@ inline void scan_keyboard(Key& key) {
     key.numlock = state[SDL_SCANCODE_NUMLOCKCLEAR];
 }
 
+inline void scan_mouse(Mouse& mouse) {
+    switch (mouse.event.type) {
+    case SDL_MOUSEMOTION:
+        mouse.x = mouse.event.motion.x;
+        mouse.y = mouse.event.motion.y;
+        mouse.dx = mouse.event.motion.xrel;
+        mouse.dy = mouse.event.motion.yrel;
+        break;
+    case SDL_MOUSEBUTTONDOWN:
+        if (mouse.event.button.button == SDL_BUTTON_LEFT) {
+            mouse.left_button = true;
+            mouse.left_click = true;
+        }
+        if (mouse.event.button.button == SDL_BUTTON_RIGHT) {
+            mouse.right_button = true;
+            mouse.right_click = true;
+        }
+        if (mouse.event.button.button == SDL_BUTTON_MIDDLE) {
+            mouse.middle_button = true;
+        }
+        break;
+    case SDL_MOUSEBUTTONUP:
+        if (mouse.event.button.button == SDL_BUTTON_LEFT) {
+            mouse.left_button = false;
+        }
+        if (mouse.event.button.button == SDL_BUTTON_RIGHT) {
+            mouse.right_button = false;
+        }
+        if (mouse.event.button.button == SDL_BUTTON_MIDDLE) {
+            mouse.middle_button = false;
+        }
+        break;
+    case SDL_MOUSEWHEEL:
+        mouse.wheel_y = mouse.event.wheel.y;
+        break;
+    default: break;
+    }
+}
+
 inline bool render_draw_pixel(Screen screen, int x, int y, SDL_Color c) {
     SDL_SetRenderDrawColor(screen.renderer, c.r, c.g, c.b, c.a);
     int error = SDL_RenderDrawPoint(screen.renderer, x, y);
@@ -199,17 +248,15 @@ inline bool render_draw_rect(Screen screen, SDL_Rect rect, SDL_Color c) {
     return true;
 }
 
-inline bool render_draw_image(Screen screen, SDL_Surface* image, SDL_Rect* dest) {
+inline bool render_draw_image(Screen screen, SDL_Surface* image, SDL_Rect dest) {
     SDL_Texture* texture = SDL_CreateTextureFromSurface(screen.renderer, image);
     if (!texture) {
         std::cerr << "SDL_CreateTextureFromSurface Error: " << SDL_GetError() << std::endl;
         return false;
     }
 
-    SDL_RenderCopy(screen.renderer, texture, NULL, dest);
+    SDL_RenderCopy(screen.renderer, texture, nullptr, &dest);
     SDL_DestroyTexture(texture);
     SDL_RenderPresent(screen.renderer);
     return true;
 }
-
-#endif
