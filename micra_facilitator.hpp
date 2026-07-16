@@ -1,3 +1,9 @@
+/*
+ * Bu lisans, özetle; bireysel ve eğitim kullanımına ücretsizdir. 
+ * Ticari ve kurumsal kullanım için yazılı izin ve lisans anahtarı gereklidir.
+ * Detaylar ve tam metin için: https://github.com/Micracher/Micra-Facilitator/blob/main/LICENSE.md
+ */
+
 #pragma once
 
 #ifndef MICRA_FACILITATOR
