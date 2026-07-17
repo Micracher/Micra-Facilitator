@@ -220,7 +220,6 @@ inline bool draw_pixel(Screen screen, int x, int y, SDL_Color c) {
         std::cerr << "SDL_RenderDrawPoint Error: " << SDL_GetError() << std::endl;
         return false;
     }
-    SDL_RenderPresent(screen.renderer);
     return true;
 }
 
@@ -232,7 +231,6 @@ inline bool draw_line(Screen screen, int x1, int y1, int x2, int y2, SDL_Color c
         std::cerr << "SDL_RenderDrawLine Error: " << SDL_GetError() << std::endl;
         return false;
     }
-    SDL_RenderPresent(screen.renderer);
     return true;
 }
 
@@ -244,7 +242,6 @@ inline bool draw_rect(Screen screen, SDL_Rect rect, SDL_Color c) {
         std::cerr << "SDL_RenderDrawRect Error: " << SDL_GetError() << std::endl;
         return false;
     }
-    SDL_RenderPresent(screen.renderer);
     return true;
 }
 
