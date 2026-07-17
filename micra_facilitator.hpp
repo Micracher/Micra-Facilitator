@@ -212,7 +212,7 @@ inline void scan_mouse(Mouse& mouse) {
     }
 }
 
-inline bool render_draw_pixel(Screen screen, int x, int y, SDL_Color c) {
+inline bool draw_pixel(Screen screen, int x, int y, SDL_Color c) {
     SDL_SetRenderDrawColor(screen.renderer, c.r, c.g, c.b, c.a);
     int error = SDL_RenderDrawPoint(screen.renderer, x, y);
 
@@ -224,7 +224,7 @@ inline bool render_draw_pixel(Screen screen, int x, int y, SDL_Color c) {
     return true;
 }
 
-inline bool render_draw_line(Screen screen, int x1, int y1, int x2, int y2, SDL_Color c) {
+inline bool draw_line(Screen screen, int x1, int y1, int x2, int y2, SDL_Color c) {
     SDL_SetRenderDrawColor(screen.renderer, c.r, c.g, c.b, c.a);
     int error = SDL_RenderDrawLine(screen.renderer, x1, y1, x2, y2);
 
@@ -236,7 +236,7 @@ inline bool render_draw_line(Screen screen, int x1, int y1, int x2, int y2, SDL_
     return true;
 }
 
-inline bool render_draw_rect(Screen screen, SDL_Rect rect, SDL_Color c) {
+inline bool draw_rect(Screen screen, SDL_Rect rect, SDL_Color c) {
     SDL_SetRenderDrawColor(screen.renderer, c.r, c.g, c.b, c.a);
     int error = SDL_RenderDrawRect(screen.renderer, &rect);
 
@@ -248,15 +248,41 @@ inline bool render_draw_rect(Screen screen, SDL_Rect rect, SDL_Color c) {
     return true;
 }
 
-inline bool render_draw_image(Screen screen, SDL_Surface* image, SDL_Rect dest) {
-    SDL_Texture* texture = SDL_CreateTextureFromSurface(screen.renderer, image);
-    if (!texture) {
-        std::cerr << "SDL_CreateTextureFromSurface Error: " << SDL_GetError() << std::endl;
-        return false;
-    }
+inline void draw_texture(Screen screen, SDL_Texture* tex, int x, int y) {
+    int w, h;
+    SDL_QueryTexture(tex, nullptr, nullptr, &w, &h);
+    SDL_Rect dest = {x, y, w, h};
+    SDL_RenderCopy(screen.renderer, tex, nullptr, &dest);
+}
 
-    SDL_RenderCopy(screen.renderer, texture, nullptr, &dest);
-    SDL_DestroyTexture(texture);
-    SDL_RenderPresent(screen.renderer);
-    return true;
+inline SDL_Texture* load_texture(Screen screen, const char* path) {
+    SDL_Surface* surf = SDL_LoadBMP(path);
+    if (!surf) {
+        std::cerr << "IMG_Load Error: " << SDL_GetError() << std::endl;
+        return nullptr;
+    }
+    SDL_Texture* tex = SDL_CreateTextureFromSurface(screen.renderer, surf);
+    SDL_FreeSurface(surf);
+    return tex;
+}
+
+inline float get_delta_time() {
+    static Uint32 last = SDL_GetTicks();
+    Uint32 now = SDL_GetTicks();
+    float dt = (now - last) / 1000.0f;
+    last = now;
+    return dt;
+}
+
+inline int get_fps() {
+    static int fps = 0;
+    static Uint32 last = SDL_GetTicks();
+    static int count = 0;
+    count++;
+    if (SDL_GetTicks() - last >= 1000) {
+        fps = count;
+        count = 0;
+        last = SDL_GetTicks();
+    }
+    return fps;
 }
