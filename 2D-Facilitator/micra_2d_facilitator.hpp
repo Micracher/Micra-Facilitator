@@ -1,7 +1,17 @@
 /*
- * Bu lisans, özetle; bireysel ve eğitim kullanımına ücretsizdir. 
- * Ticari ve kurumsal kullanım için yazılı izin ve lisans anahtarı gereklidir.
- * Detaylar ve tam metin için: https://github.com/Micracher/Micra-Facilitator/blob/main/LICENSE.md
+ * SPDX-License-Identifier: MicraPL-2.1
+ *
+ * Bu dosya, Micra Facilitator (MicraP) projesinin bir parçasıdır.
+ * Detaylı lisans koşulları için:
+ * https://github.com/Micracher/Micra-Facilitator/blob/main/LICENSE.md
+ *
+ * ÖZET:
+ * - Bireysel, eğitim ve araştırma kullanımı ÜCRETSİZDİR.
+ * - Ticari, kurumsal veya gelir getirici her türlü kullanım
+ *   için YAZILI İZİN ve LİSANS ANAHTARI gereklidir.
+ * - İzinsiz ticari kullanım LİSANS İHLALİDİR ve yaptırıma tabidir.
+ *
+ * Telif Hakkı © 2026 - Micraçer / Miraç
  */
 
 #pragma once
