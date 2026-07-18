@@ -186,24 +186,37 @@ Tüm `create_` ve `draw_` fonksiyonları, hata durumunda `std::cerr` ile hata me
 
 ## 🧑‍💻 Katkıda Bulunma
 
-Bu projeye yapılan her katkı (pull request, kod ekleme, hata düzeltmesi),  
-**MicraPL v1** lisansına tabidir.
+Projeye katkıda bulunmak, onu daha iyi hale getirmek ve topluluğun bir parçası olmak için harika bir
+fırsattır. Aşağıdaki kurallar, herkes için adil ve saygılı bir ortam sağlamayı amaçlar.
 
-Katkıda bulunanlar, yazdıkları kodun mülkiyetinin **Micraçer'e devredildiğini** kabul eder.  
-Lisans detayları için: [LICENSE](./LICENSE)
+## Nasıl Katkıda Bulunabilirsin?
+1. **Projeyi forklayın:** Kendi hesabınıza bir kopya oluşturun.
+2. **Değişikliklerinizi yapın:** Yeni bir özellik ekleyin, bir hatayı düzeltin veya dökümantasyonu iyileştirin.
+3. **Pull request açın:** Değişikliklerinizi açıklayan bir PR gönderin.
 
-### Nasıl Katkıda Bulunabilirsin?
-1. Projeyi forklayın.
-2. Değişikliklerinizi yapın.
-3. Pull request açın.
+## 📝 Katkı Koşulları (MicraPL v2.1)
 
-**Not:** Katkı sahibi, kodun özgün olduğunu ve üçüncü taraf haklarını ihlal etmediğini beyan eder.
+- Lisans Kabulü: Gönderdiğiniz tüm katkılar, projenin genel lisansı olan MicraPL v2.1 koşulları altında değerlendirilir. Bu, katkınızın açık kaynak olarak kalacağı ve bu lisansla dağıtılacağı anlamına gelir.
+- Mülkiyet: Katkı sahibi, yazdığı kodun fikri mülkiyet haklarını saklı tutar. Ancak, katkının bu projede kullanılması, çoğaltılması ve dağıtılması için Micraçer'e süresiz, geri alınamaz ve telifsiz bir kullanım lisansı verir.
+- Özgünlük: Katkı sahibi, gönderdiği kodun özgün olduğunu ve üçüncü taraf haklarını ihlal etmediğini beyan eder.
+- İletişim: Büyük veya yapıcı değişiklikler öncesinde, bir konu (issue) açarak veya Discord üzerinden iletişime geçerek fikir alışverişinde bulunmanız önerilir.
+
+## Katkı Türleri
+
+Her türlü katkı değerlidir:
+
+- Yeni özellik önerileri ve kod eklemeleri
+- Hata raporları ve düzeltmeleri
+- Dökümantasyon iyileştirmeleri (bu dosya, README, örnekler)
+- Örnek projeler ve eğitim içerikleri
+
+Katkılarınız için şimdiden teşekkürler! Birlikte bu projeyi daha iyi bir yere taşıyalım.
 
 ---
 
-## 📄 Lisans
+### 📄 Lisans
 
-MicraPL v1 – Detaylar için `LICENSE` dosyasına bakın.
+Bu proje MicraPL v2.1 ile lisanslanmıştır. Detaylar için [LICENSE](https://github.com/Micracher/Micra-Facilitator/blob/main/LICENSE.md) dosyasına bakın.
 
 ---
 
